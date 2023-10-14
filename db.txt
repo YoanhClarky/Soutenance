@@ -1,0 +1,109 @@
+TABLES DE BASE
+Cycle:
+designation(Primaire,College,...)
+----------------
+Role:
+designation
+0-SuperAD
+1-Administrateur
+2-Directeur
+----------------
+Module :
+Nom
+Description
+(technique,général)
+----------------
+User :
+Nom,numéro,adresse,...
+----------------
+Ville:
+designation
+----------------
+zone :
+designation
+ville_id
+----------------
+Année:
+designation
+--------------------TABLES EXTERNES-------------------
+Filiere:
+designation
+module_id
+societe_id
+----------------
+filiere_Matière
+filiere_id
+Matière_id
+----------------
+Cycle_Ecole:
+Societe_id
+Cycle_id
+++Check de preference++
+----------------
+Site :
+Nom ou url
+Societe_id
+----------------
+Moyenne :
+Personne()
+Resultat_id
+----------------
+Resultats:
+annee_id
+examen_id
+inscrit
+present
+admin_nbr
+echouer_nbr
+Année
+----------------
+Classe :
+Nom
+nbr d'inscription
+Module_id
+----------------
+tables : SOCIETE 
+-Nom
+-Site web
+-Numero 1
+-Numero 2
+-Situation géographique
+-Nom du promoteur
+-Directeur
+-Un slogan
+-Icon
+-Description
+-nbr Inscriptions
+-Date Ouverture
+-User_id
+-Adresse
+-Email
+-ville_id
+-----------------
+Professeur :
+Nom
+prenom
+Compétences
+image
+année d'experience
+----------------
+matière_prof :
+professeur_id
+matière_id
+-----------------
+matière:
+designation
+description
+societe_id
+-----------------
+matiere_module:
+matiere_id
+module_id
+-----------------
+Commentaires :
+contenu
+user_id
+societe_id
+
+
+++Pour une personne qui a plus de 2 etablissement le cout est reduit de 20%++
